@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171714">
+  <meta name="description" content="Rockey Saloon — thoughtful cuts, timeless style, and good company. Book your next visit.">
+  <title>Rockey Saloon — Good hair. Good company.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#171714;--paper:#f4f0e7;--cream:#e8e1d3;--gold:#c99a54;--muted:#aaa69d;--serif:'Playfair Display',Georgia,serif;--sans:'DM Sans',Arial,sans-serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ink);color:var(--paper);font-family:var(--sans);-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(1180px,calc(100% - 64px));margin:auto}
+    .topline{height:34px;background:var(--gold);color:#201b13;display:flex;align-items:center;justify-content:center;font-size:10px;letter-spacing:.17em;text-transform:uppercase;font-weight:700}.topline span{margin:0 8px;color:#75572f}
+    header{height:82px;display:flex;align-items:center;border-bottom:1px solid #ffffff16;position:relative;z-index:5;background:var(--ink)}.nav{display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:12px}.brand-mark{width:35px;height:35px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold);font:600 19px var(--serif)}.brand-name{font-size:14px;letter-spacing:.2em;font-weight:700}.brand-name small{display:block;font-size:8px;letter-spacing:.31em;color:var(--muted);margin-top:4px}.links{display:flex;align-items:center;gap:34px;font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:#d0cbc0}.links a:hover{color:var(--gold)}.book-link,.button{display:inline-flex;align-items:center;justify-content:center;gap:11px;background:var(--gold);color:#211a10;padding:15px 22px;font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;transition:.2s}.book-link:hover,.button:hover{background:#ddb46f;transform:translateY(-2px)}.menu-toggle{display:none;background:none;color:var(--paper);border:0;font-size:24px}
+    .hero{min-height:650px;height:min(730px,calc(100vh - 116px));position:relative;display:flex;align-items:center;overflow:hidden;background:radial-gradient(ellipse at 77% 46%,#8f623b 0,#63432e 18%,#33291f 39%,#1c1b17 69%,#171714 100%)}.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#171714 1%,#171714ee 27%,#17171466 57%,#17171420 100%),linear-gradient(0deg,#171714 0%,transparent 19%,transparent 85%,#17171477 100%);z-index:1}.hero:after{content:"";position:absolute;width:47vw;height:77%;right:4%;top:12%;border:1px solid #d6ab7350;border-radius:50% 50% 0 0;box-shadow:0 0 0 18px #d6ab7307,0 0 90px #d6ab7314}.hero-visual{position:absolute;inset:0;overflow:hidden}.hero-visual:before{content:"";position:absolute;right:10%;top:16%;width:min(35vw,470px);height:76%;border-radius:48% 48% 8px 8px;background:linear-gradient(145deg,#d0a16b 0%,#795438 26%,#40362c 43%,#23221e 78%);opacity:.48;filter:blur(1px)}.hero-visual:after{content:"";position:absolute;right:13%;top:22%;width:min(29vw,390px);height:67%;background:repeating-linear-gradient(90deg,transparent 0 42px,#17171420 43px 44px),linear-gradient(0deg,#171714 0%,transparent 35%,#d4ae7a30 100%);border-radius:48% 48% 0 0;opacity:.75}.hero-inner{position:relative;z-index:2;padding:50px 0;max-width:650px}.eyebrow{font-size:10px;color:var(--gold);letter-spacing:.27em;text-transform:uppercase;font-weight:700;display:flex;align-items:center;gap:12px}.eyebrow:before{content:"";width:32px;height:1px;background:var(--gold)}h1,h2,h3,p{margin-top:0}.hero h1{font:500 clamp(52px,7vw,92px)/.99 var(--serif);letter-spacing:-.045em;margin:27px 0 24px}.hero h1 em{color:var(--gold);font-weight:500}.hero-copy{font-size:14px;line-height:1.9;color:#d0cbc0;max-width:405px;margin-bottom:30px}.hero-actions{display:flex;align-items:center;gap:26px}.text-link{font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--paper);border-bottom:1px solid #b9b1a0;padding:0 0 7px}.text-link:hover{color:var(--gold)}.hero-note{position:absolute;z-index:2;right:5%;bottom:8%;font:italic 16px var(--serif);color:#e1c69f;writing-mode:vertical-rl;letter-spacing:.08em}.hero-stamp{position:absolute;z-index:2;right:36%;bottom:9%;width:90px;height:90px;border:1px solid #d0a76d88;border-radius:50%;display:grid;place-items:center;text-align:center;color:var(--gold);font:11px/1.5 var(--serif);transform:rotate(-12deg)}
+    .trust{border-top:1px solid #ffffff13;border-bottom:1px solid #ffffff13;background:#1c1b17}.trust-row{min-height:104px;display:grid;grid-template-columns:repeat(4,1fr);align-items:center}.trust-item{display:flex;align-items:center;justify-content:center;gap:13px;border-right:1px solid #ffffff15;min-height:48px}.trust-item:last-child{border:0}.trust-icon{font:22px var(--serif);color:var(--gold)}.trust-item strong{display:block;font:15px var(--serif);font-weight:500}.trust-item small{display:block;color:var(--muted);font-size:9px;letter-spacing:.11em;text-transform:uppercase;margin-top:4px}
+    section{scroll-margin-top:30px}.section-pad{padding:112px 0}.section-head{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:44px}.section-head h2{font:500 clamp(36px,4vw,54px)/1.1 var(--serif);letter-spacing:-.03em;margin:15px 0 0}.section-head p{color:var(--muted);font-size:12px;line-height:1.8;max-width:300px;margin-bottom:4px}.services{background:var(--paper);color:var(--ink)}.services .eyebrow{color:#926c3e}.services .eyebrow:before{background:#926c3e}.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.service-card{border:1px solid #d8d0c2;padding:30px 28px 27px;min-height:235px;position:relative;transition:.2s}.service-card:hover{background:#ebe4d7;transform:translateY(-4px)}.service-top{display:flex;justify-content:space-between;align-items:center;color:#9f7948;font:22px var(--serif)}.service-top small{font:10px var(--sans);letter-spacing:.1em}.service-card h3{font:500 24px var(--serif);margin:24px 0 9px}.service-card p{font-size:11px;color:#78746b;line-height:1.7;max-width:260px;margin:0}.price{position:absolute;right:27px;bottom:25px;font:16px var(--serif);color:#805d32}
+    .story{background:#201f1b}.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:90px;align-items:center}.story-art{height:480px;position:relative;background:radial-gradient(ellipse at 45% 40%,#9b7347 0,#695139 23%,#3b3429 48%,#25231e 76%);overflow:hidden}.story-art:before{content:"";position:absolute;left:18%;top:9%;height:100%;width:64%;border:1px solid #d2b08377;border-radius:50% 50% 0 0;box-shadow:inset 0 0 0 15px #17171412,0 0 0 15px #17171416}.story-art:after{content:"R";position:absolute;inset:0;display:grid;place-items:center;color:#e3c397b5;font:200px var(--serif)}.art-label{position:absolute;z-index:1;bottom:23px;left:24px;color:#f4f0e7;font-size:9px;letter-spacing:.2em;text-transform:uppercase}.story-copy h2{font:500 clamp(38px,4vw,54px)/1.12 var(--serif);margin:18px 0 23px}.story-copy h2 em{color:var(--gold);font-weight:500}.story-copy p{font-size:12px;line-height:2;color:#bcb8af;max-width:430px}.story-copy .button{margin-top:12px}
+    .quote{background:var(--gold);color:#201a12;text-align:center;padding:76px 24px}.quote .quote-mark{font:50px/.7 var(--serif);opacity:.45}.quote blockquote{font:500 clamp(23px,3vw,37px)/1.4 var(--serif);max-width:760px;margin:18px auto 20px}.quote cite{font-style:normal;font-size:9px;letter-spacing:.18em;text-transform:uppercase}
+    .visit{background:var(--paper);color:var(--ink)}.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px}.visit h2{font:500 clamp(38px,4vw,52px)/1.1 var(--serif);margin:16px 0 22px}.visit p{font-size:12px;line-height:1.9;color:#77736b;max-width:390px}.details{margin-top:30px;display:grid;grid-template-columns:1fr 1fr;gap:22px 30px}.detail{border-top:1px solid #d5cebf;padding-top:12px}.detail small{display:block;color:#947044;font-size:9px;letter-spacing:.15em;text-transform:uppercase;margin-bottom:7px}.detail strong{font:15px var(--serif);font-weight:500}.map-card{min-height:355px;background:linear-gradient(135deg,#b9ab91,#736951);position:relative;overflow:hidden;display:grid;place-items:center}.map-card:before{content:"";position:absolute;inset:-20%;background:repeating-linear-gradient(32deg,transparent 0 43px,#f1e9d335 44px 47px),repeating-linear-gradient(124deg,transparent 0 65px,#2a322a30 66px 69px)}.map-card:after{content:"";position:absolute;left:48%;top:43%;width:22px;height:22px;background:var(--gold);border:5px solid var(--paper);border-radius:50%;box-shadow:0 0 0 9px #c99a5444}.map-label{position:absolute;z-index:1;left:20px;bottom:20px;background:var(--paper);padding:14px 17px;font:16px var(--serif)}.map-label small{display:block;font:9px var(--sans);letter-spacing:.1em;color:#80796c;margin-top:4px}
+    footer{background:var(--ink);padding:30px 0}.footer-row{display:flex;align-items:center;justify-content:space-between;color:#aaa69d;font-size:9px;letter-spacing:.08em}.footer-links{display:flex;gap:22px}.footer-links a:hover{color:var(--gold)}
+    @media(max-width:760px){.wrap{width:min(100% - 40px,560px)}header{height:70px}.links{display:none;position:absolute;top:69px;left:0;right:0;padding:24px 22px;background:#201f1b;flex-direction:column;align-items:flex-start;gap:22px;border-top:1px solid #ffffff18}.links.open{display:flex}.links .book-link{margin-top:4px}.menu-toggle{display:block}.nav>.book-link{display:none}.hero{min-height:660px;height:calc(100svh - 104px);max-height:790px}.hero:after{width:75vw;height:60%;right:-18%;top:25%}.hero-visual:before{width:65vw;height:62%;right:-4%;top:26%}.hero-visual:after{width:56vw;height:55%;right:2%;top:30%}.hero-inner{padding:20px 0;max-width:470px}.hero h1{font-size:clamp(54px,13vw,76px)}.hero-copy{max-width:330px}.hero-note{right:5%;bottom:11%;font-size:13px}.hero-stamp{right:11%;bottom:24%;width:72px;height:72px;font-size:9px}.trust-row{grid-template-columns:1fr 1fr;padding:13px 0}.trust-item{justify-content:flex-start;padding:12px 3px;border-right:0}.trust-item:nth-child(odd){border-right:1px solid #ffffff15}.trust-item:nth-child(-n+2){border-bottom:1px solid #ffffff15}.trust-item strong{font-size:14px}.section-pad{padding:78px 0}.section-head{display:block;margin-bottom:30px}.section-head p{margin-top:15px}.services-grid{grid-template-columns:1fr}.service-card{min-height:205px}.story-grid,.visit-grid{grid-template-columns:1fr;gap:38px}.story-art{height:360px}.story-copy{order:-1}.visit-grid{gap:30px}.details{gap:20px}.map-card{min-height:280px}.footer-row{flex-wrap:wrap;gap:18px}.footer-links{order:3;width:100%;justify-content:flex-start}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+    /* Show the complete promotional artwork at its native 941px width where it fits. */
+    .hero{display:block;height:auto;min-height:0;max-height:none;overflow:visible;background:#080d19}
+    .hero:before,.hero:after,.hero-visual,.hero-inner,.hero-stamp,.hero-note{display:none}
+    .hero-promo{display:block;width:941px;max-width:100%;height:auto;margin:0 auto}
+    @media(max-width:760px){.hero{height:auto;min-height:0;max-height:none}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#home" aria-label="Rockey Saloon home"><span class="brand-mark">R</span><span class="brand-name">ROCKEY<small>S A L O O N</small></span></a>
+      <nav class="links" id="site-nav" aria-label="Main navigation"><a href="#services">Services</a><a href="#story">Our story</a><a href="#visit">Find us</a><a class="book-link" href="#visit">Book a chair <span>↗</span></a></nav>
+      <a class="book-link" href="#visit">Book a chair <span>↗</span></a>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav">☰</button>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="home" aria-label="Rockey promotion">
+      <a class="hero-promo-link" href="https://wa.me/918969740977?text=I%20WANT%20TO%20KNOW%20MORE.." aria-label="Message Rockey on WhatsApp to know more">
+        <img class="hero-promo" src="rockey.png" alt="Rockey — 10% off. Grab now for the best services in the market.">
+      </a>
+    </section>
+    <div class="trust"><div class="wrap trust-row">
+      <div class="trust-item"><span class="trust-icon">✂</span><div><strong>Sharp by nature</strong><small>Detail in every cut</small></div></div>
+      <div class="trust-item"><span class="trust-icon">◷</span><div><strong>Your time, well spent</strong><small>Easy appointments</small></div></div>
+      <div class="trust-item"><span class="trust-icon">✦</span><div><strong>Made for everyone</strong><small>All styles welcome</small></div></div>
+      <div class="trust-item"><span class="trust-icon">♡</span><div><strong>Good people, always</strong><small>Come as you are</small></div></div>
+    </div></div>
+    <section class="services section-pad" id="services"><div class="wrap">
+      <div class="section-head"><div><div class="eyebrow">The good stuff</div><h2>Find your fresh.</h2></div><p>From the clean-up to the full reset, we have a seat and a style for you.</p></div>
+      <div class="services-grid">
+        <article class="service-card"><div class="service-top">✂ <small>01 / THE CLASSIC</small></div><h3>The signature cut</h3><p>A considered cut, finished just right. The one you come back for.</p><div class="price">From ₹500</div></article>
+        <article class="service-card"><div class="service-top">◒ <small>02 / THE FINISH</small></div><h3>Beard &amp; detail</h3><p>Shape, tidy, and a warm towel finish. Good grooming, no fuss.</p><div class="price">From ₹350</div></article>
+        <article class="service-card"><div class="service-top">✦ <small>03 / THE RESET</small></div><h3>The full experience</h3><p>A little extra time in the chair. Cut, wash, style, and unwind.</p><div class="price">From ₹900</div></article>
+      </div>
+    </div></section>
+    <section class="story section-pad" id="story"><div class="wrap story-grid">
+      <div class="story-art" role="img" aria-label="Warm, welcoming Rockey Saloon interior"><span class="art-label">Good craft. No rush.</span></div>
+      <div class="story-copy"><div class="eyebrow">A place to settle in</div><h2>More than a cut.<br><em>A proper pause.</em></h2><p>Rockey Saloon is built around a simple idea: looking after yourself should feel good. We bring skilled hands, thoughtful service, and an open door to every appointment.</p><p>Whether it's your regular trim or a brand-new look, we'll make sure you leave feeling like yourself—only sharper.</p><a class="button" href="#visit">Meet us here <span>↗</span></a></div>
+    </div></section>
+    <section class="quote"><div class="quote-mark">“</div><blockquote>“The kind of place where they remember your name—and exactly how you like your fade.”</blockquote><cite>A regular in the chair</cite></section>
+    <section class="visit section-pad" id="visit"><div class="wrap visit-grid">
+      <div><div class="eyebrow">Your chair is waiting</div><h2>Drop by.<br>Leave feeling good.</h2><p>Walk in for a quick refresh or book ahead for a little more time. Either way, there's always a warm welcome.</p>
+        <div class="details"><div class="detail"><small>Come find us</small><strong>Your neighborhood, India</strong></div><div class="detail"><small>Give us a call</small><strong>+91 98765 43210</strong></div><div class="detail"><small>We're open</small><strong>Mon – Sun · 10am – 9pm</strong></div><div class="detail"><small>Booking</small><strong>Walk-ins welcome</strong></div></div>
+      </div>
+      <div class="map-card" role="img" aria-label="Illustrated map showing the saloon location"><div class="map-label">Rockey Saloon<small>Come on in — we're right here</small></div></div>
+    </div></section>
+  </main>
+  <footer><div class="wrap footer-row"><a class="brand" href="#home"><span class="brand-mark">R</span><span class="brand-name">ROCKEY<small>S A L O O N</small></span></a><span>© 2026 Rockey Saloon. Made for good hair days.</span><div class="footer-links"><a href="#services">Services</a><a href="#visit">Visit</a><a href="#home">Instagram ↗</a></div></div></footer>
+  <script>
+    const menuButton = document.querySelector('.menu-toggle');
+    const siteNav = document.querySelector('#site-nav');
+    menuButton.addEventListener('click', () => {
+      const open = siteNav.classList.toggle('open');
+      menuButton.setAttribute('aria-expanded', String(open));
+      menuButton.textContent = open ? '×' : '☰';
+    });
+    siteNav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      siteNav.classList.remove('open');
+      menuButton.setAttribute('aria-expanded', 'false');
+      menuButton.textContent = '☰';
+    }));
+  </script>
+</body>
+</html>
