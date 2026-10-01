@@ -38,6 +38,25 @@
 
   gtag('config', 'AW-18486554729');
 </script>
+<!-- Event snippet for Outbound click conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-18486554729/sUKgCIzM6IwdEOngie9E',
+      'value': 1.0,
+      'currency': 'INR',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
 </head>
 <body>
   <header>
@@ -50,7 +69,7 @@
   </header>
   <main>
     <section class="hero" id="home" aria-label="Rockey promotion">
-      <a class="hero-promo-link" href="https://wa.me/918969740977?text=I%20WANT%20TO%20KNOW%20MORE.." aria-label="Message Rockey on WhatsApp to know more">
+      <a class="hero-promo-link" href="https://wa.me/918969740977?text=I%20WANT%20TO%20KNOW%20MORE.." onclick="return gtag_report_conversion(this.href)" aria-label="Message Rockey on WhatsApp to know more">
         <img class="hero-promo" src="rockey.png" alt="Rockey — 10% off. Grab now for the best services in the market.">
       </a>
     </section>
